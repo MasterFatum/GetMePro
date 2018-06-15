@@ -16,6 +16,8 @@ namespace GetMePro.Models
             // Здесь добавьте утверждения пользователя
             return userIdentity;
         }
+
+        public string Rules { get; set; }
     }
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
