@@ -26,5 +26,18 @@ namespace GetMePro.Controllers
 
             return View();
         }
+
+        [HttpGet]
+        public ActionResult SpecialistPanel()
+        { 
+
+            return View();
+        }
+
+        [HttpGet]
+        public ActionResult SearchSpecialist()
+        {
+            return View();
+        }
     }
 }

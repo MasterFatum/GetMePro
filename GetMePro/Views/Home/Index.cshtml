@@ -1,12 +1,22 @@
-﻿@{
+﻿@using System.Activities.Expressions
+@{
     ViewBag.Title = "GetMeProf";
 }
 
-<div class="jumbotron">
-    <h1>GET ME PROF</h1>
-    <p class="lead">Мы знаем, где найти лучший сервис.</p>
-    <p><a href="https://fckrasnodar.ru" class="btn btn-primary btn-lg">Я - специалист &raquo;</a></p>
-    <p><a href="https://fckrasnodar.ru" class="btn btn-primary btn-lg">Я - ищу специалиста &raquo;</a></p>
+<div class="jumbotron" align="center">
+    <h1 align="center">GET ME PROF</h1>
+    <p class="lead" align="center">Мы знаем, где найти лучший сервис.</p><br/>
+    <p align="center">
+        <div class="btn btn-success" style="font-size:x-large" align="center">
+            @Html.ActionLink("Я - специалист", "SpecialistPanel")<br />
+        </div><br />
+    </p>
+    <p>
+        <div class="btn btn-success" style="font-size:x-large">
+            @Html.ActionLink("Я - ищу специалиста", "SearchSpecialist")<br />
+        </div><br />
+    </p>
+
 </div>
 
 <div class="row">
