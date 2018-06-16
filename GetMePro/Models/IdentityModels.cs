@@ -17,7 +17,8 @@ namespace GetMePro.Models
             return userIdentity;
         }
 
-        public string Rules { get; set; }
+        public string Block { get; set; }
+        public string NameWork { get; set; }
     }
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
