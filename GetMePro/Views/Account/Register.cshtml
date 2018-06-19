@@ -24,11 +24,25 @@
     </div>
 
     <div class="form-group" )>
+        @Html.LabelFor(m => m.CategoryServises, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.DropDownListFor(x => x.CategoryServises, new[] {
+                new SelectListItem() { Text = @"Ремонт и строительство"},
+                new SelectListItem() { Text = @"Услуги красоты"},
+                new SelectListItem() { Text = @"Автомобильные услуги"},
+                new SelectListItem() { Text = @"Прочие услуги"}
+            }, "Выберите вариант", new { @class = "form-control", style = "width:500px" })
+        </div>
+    </div>
+
+    <div class="form-group" )>
         @Html.LabelFor(m => m.CategoryWork, new { @class = "col-md-2 control-label" })
         <div class="col-md-10">
             @Html.DropDownListFor(x => x.CategoryWork, new[] {
-                new SelectListItem() { Text = @"Кафельная плитка", Value = Boolean.TrueString},
-                new SelectListItem() { Text = @"Сантехника", Value = Boolean.FalseString}
+                new SelectListItem() { Text = @"Газопроводные работы"},
+                new SelectListItem() { Text = @"Кафельные работы"},
+                new SelectListItem() { Text = @"Ремонтные работы"},
+                new SelectListItem() { Text = @"Сантехнические работы"}
             }, "Выберите вариант", new { @class = "form-control", style = "width:500px" })
         </div>
     </div>

@@ -69,6 +69,10 @@ namespace GetMePro.Models
         public string Area { get; set; }
 
         [Required]
+        [Display(Name = "Услуги")]
+        public string CategoryServises { get; set; }
+
+        [Required]
         [Display(Name = "Сфера деятельности")]
         public string CategoryWork { get; set; }
 

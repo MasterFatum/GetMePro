@@ -151,7 +151,7 @@ namespace GetMePro.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { Area = model.Area, CategoryWork = model.CategoryWork, FirstName = model.FirstName, LastName = model.LastName,
+                var user = new ApplicationUser { Area = model.Area, CategoryServises = model.CategoryServises, CategoryWork = model.CategoryWork, FirstName = model.FirstName, LastName = model.LastName,
                     MiddleName = model.MiddleName, Phone = model.Phone, UserName = model.Email, Email = model.Email };
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)

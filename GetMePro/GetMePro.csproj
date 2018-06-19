@@ -211,6 +211,10 @@
     <Compile Include="Migrations\201806191653316_GetProfMigr.Designer.cs">
       <DependentUpon>201806191653316_GetProfMigr.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201806191723221_GetMeProf1.cs" />
+    <Compile Include="Migrations\201806191723221_GetMeProf1.Designer.cs">
+      <DependentUpon>201806191723221_GetMeProf1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -306,6 +310,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201806191653316_GetProfMigr.resx">
       <DependentUpon>201806191653316_GetProfMigr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806191723221_GetMeProf1.resx">
+      <DependentUpon>201806191723221_GetMeProf1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
