@@ -1,4 +1,5 @@
-﻿using System.Data.Entity;
+﻿using System.ComponentModel.DataAnnotations;
+using System.Data.Entity;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
@@ -17,7 +18,12 @@ namespace GetMePro.Models
             return userIdentity;
         }
 
+        [Required]
+        [Display(Name = "Район")]
         public string Block { get; set; }
+
+        [Required]
+        [Display(Name = "Сфера деятельности")]
         public string NameWork { get; set; }
     }
 

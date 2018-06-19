@@ -73,6 +73,18 @@ namespace GetMePro.Models
         public string NameWork { get; set; }
 
         [Required]
+        [Display(Name = "Фамилия")]
+        public string FirstName { get; set; }
+
+        [Required]
+        [Display(Name = "Имя")]
+        public string LastName { get; set; }
+
+        [Required]
+        [Display(Name = "Отчество")]
+        public string MiddleName { get; set; }
+
+        [Required]
         [EmailAddress]
         [Display(Name = "Адрес электронной почты")]
         public string Email { get; set; }
