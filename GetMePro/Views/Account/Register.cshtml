@@ -16,7 +16,7 @@
         @Html.LabelFor(m => m.Area, new { @class = "col-md-2 control-label" })
         <div class="col-md-10">
             @Html.DropDownListFor(x => x.Area, new[] {
-                new SelectListItem() { Text = @"ЖК ММолодёжный", Value = Boolean.TrueString},
+                new SelectListItem() { Text = @"ЖК Молодёжный", Value = Boolean.TrueString},
                 new SelectListItem() { Text = @"ПГТ Витаминкомбинат", Value = Boolean.FalseString},
                 new SelectListItem() { Text = @"СВХ Прогресс", Value = Boolean.FalseString}
             }, "Выберите вариант", new { @class = "form-control", style = "width:500px" })
@@ -58,6 +58,13 @@
         @Html.LabelFor(m => m.MiddleName, new { @class = "col-md-2 control-label" })
         <div class="col-md-10">
             @Html.TextBoxFor(m => m.MiddleName, new { @class = "form-control" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Phone, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.Phone, new { @class = "form-control" })
         </div>
     </div>
 
