@@ -20,11 +20,25 @@ namespace GetMePro.Models
 
         [Required]
         [Display(Name = "Район")]
-        public string Block { get; set; }
+        public string Area { get; set; }
 
         [Required]
         [Display(Name = "Сфера деятельности")]
-        public string NameWork { get; set; }
+        public string CategoryWork { get; set; }
+
+        [Required]
+        [Display(Name = "Фамилия")]
+        public string FirstName { get; set; }
+
+        [Required]
+        [Display(Name = "Имя")]
+        public string LastName { get; set; }
+
+        [Display(Name = "Отчество")]
+        public string MiddleName { get; set; }
+
+        [Display(Name = "Телефон")]
+        public string Phone { get; set; }
     }
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>

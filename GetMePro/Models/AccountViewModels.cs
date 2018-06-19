@@ -66,11 +66,11 @@ namespace GetMePro.Models
     {
         [Required]
         [Display(Name = "Район")]
-        public string Block { get; set; }
+        public string Area { get; set; }
 
         [Required]
         [Display(Name = "Сфера деятельности")]
-        public string NameWork { get; set; }
+        public string CategoryWork { get; set; }
 
         [Required]
         [Display(Name = "Фамилия")]
@@ -80,9 +80,11 @@ namespace GetMePro.Models
         [Display(Name = "Имя")]
         public string LastName { get; set; }
 
-        [Required]
         [Display(Name = "Отчество")]
         public string MiddleName { get; set; }
+
+        [Display(Name = "Телефон")]
+        public string Phone { get; set; }
 
         [Required]
         [EmailAddress]
