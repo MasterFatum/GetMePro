@@ -129,7 +129,7 @@ namespace GetMePro.Controllers
                     return View("Lockout");
                 case SignInStatus.Failure:
                 default:
-                    ModelState.AddModelError("", "Неправильный код.");
+                    ModelState.AddModelError("", @"Неправильный код.");
                     return View(model);
             }
         }
@@ -151,7 +151,7 @@ namespace GetMePro.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { NameWork = model.NameWork,  Block = model.Block, UserName = model.Email, Email = model.Email };
+                var user = new ApplicationUser { Block = model.Block, NameWork = model.NameWork, UserName = model.Email, Email = model.Email };
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {

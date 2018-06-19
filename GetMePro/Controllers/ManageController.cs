@@ -190,7 +190,7 @@ namespace GetMePro.Controllers
                 return RedirectToAction("Index", new { Message = ManageMessageId.AddPhoneSuccess });
             }
             // Это сообщение означает наличие ошибки; повторное отображение формы
-            ModelState.AddModelError("", "Не удалось проверить телефон");
+            ModelState.AddModelError("", @"Не удалось проверить телефон");
             return View(model);
         }
 
