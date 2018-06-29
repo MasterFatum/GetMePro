@@ -39,5 +39,20 @@ namespace GetMePro.Controllers
         {
             return View();
         }
+
+        public ActionResult ForSpecialistInfo()
+        {
+            return View();
+        }
+
+        public ActionResult ForApplicantInfo()
+        {
+            return View();
+        }
+
+        public ActionResult OtherInfo()
+        {
+            return View();
+        }
     }
 }

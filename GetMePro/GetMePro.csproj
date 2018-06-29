@@ -281,6 +281,9 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\SpecialistPanel.cshtml" />
     <Content Include="Views\Home\SearchSpecialist.cshtml" />
+    <Content Include="Views\Home\ForSpecialistInfo.cshtml" />
+    <Content Include="Views\Home\ForApplicantInfo.cshtml" />
+    <Content Include="Views\Home\OtherInfo.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
