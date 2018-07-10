@@ -16,9 +16,22 @@
         @Html.LabelFor(m => m.Area, new { @class = "col-md-2 control-label" })
         <div class="col-md-10">
             @Html.DropDownListFor(x => x.Area, new[] {
-                new SelectListItem() { Text = @"ЖК Молодёжный", Value = Boolean.TrueString},
-                new SelectListItem() { Text = @"ПГТ Витаминкомбинат", Value = Boolean.FalseString},
-                new SelectListItem() { Text = @"СВХ Прогресс", Value = Boolean.FalseString}
+                new SelectListItem() { Text = @"ЖК Молодёжный"},
+                new SelectListItem() { Text = @"Центральный район (ЦМР)"},
+                new SelectListItem() { Text = @"Фестивальный район (ФМР)"},
+                new SelectListItem() { Text = @"Комсомольский район (КМР)"},
+                new SelectListItem() { Text = @"Пашковский район (ПМР)",},
+                new SelectListItem() { Text = @"Юбилейный район (ЮМР)"},
+                new SelectListItem() { Text = @"Лента (РИП)"},
+                new SelectListItem() { Text = @"Черемушки (ЧМР)"},
+                new SelectListItem() { Text = @"Гидростроителей (ГМР)"},
+                new SelectListItem() { Text = @"Краевой клинической больницы (ККБ)"},
+                new SelectListItem() { Text = @"Завода измерительных приборов (ЗИП)"},
+                new SelectListItem() { Text = @"Им. Маршала Жукова (ЭНКА)"},
+                new SelectListItem() { Text = @"Поселок Южный"},
+                new SelectListItem() { Text = @"Поселок Северный",},
+                new SelectListItem() { Text = @"ПГТ Витаминкомбинат"},
+                new SelectListItem() { Text = @"СВХ Прогресс"}
             }, "Выберите вариант", new { @class = "form-control", style = "width:500px" })
         </div>
     </div>
