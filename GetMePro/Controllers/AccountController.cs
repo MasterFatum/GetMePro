@@ -139,6 +139,12 @@ namespace GetMePro.Controllers
         [AllowAnonymous]
         public ActionResult Register()
         {
+            ListsDropDown items = new ListsDropDown();
+
+            ViewBag.ItemsArea = items.ItemsArea;
+            ViewBag.ItemsCategoryServises = items.ItemsCategoryServise;
+            ViewBag.ItemsCategoryWork = items.ItemsCategoryWork;
+
             return View();
         }
 
@@ -149,6 +155,7 @@ namespace GetMePro.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Register(RegisterViewModel model)
         {
+            
             if (ModelState.IsValid)
             {
                 var user = new ApplicationUser { Area = model.Area, CategoryServises = model.CategoryServises, CategoryWork = model.CategoryWork, FirstName = model.FirstName, LastName = model.LastName,
