@@ -1,7 +1,42 @@
-﻿
+﻿@using GetMePro.Models
+@model ApplicationUser
 @{
     ViewBag.Title = "Поиск специалистов";
+    
 }
 
 <h2 align="center">Поиск специалистов</h2>
+@using (Html.BeginForm("SearchSpecialist", "Home", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    @Html.AntiForgeryToken()
+    <hr />
+    @Html.ValidationSummary("", new { @class = "text-danger" })
+
+    <div class="form-group" )>
+        @Html.LabelFor(m => m.Area, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+        @Html.DropDownListFor(x => x.Area, (List<SelectListItem>)ViewBag.ItemsArea, 
+        "Выберите вариант", new {@class = "form-control", style = "width:500px"}) @Html.ValidationMessageFor(x => x.Area)
+       </div>
+    </div>
+    <div class="form-group" )>
+        @Html.LabelFor(m => m.CategoryServises, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.DropDownListFor(x => x.CategoryServises, (List<SelectListItem>)ViewBag.ItemsCategoryServises,
+            "Выберите вариант", new {@class = "form-control", style = "width:500px"}) @Html.ValidationMessageFor(x => x.CategoryServises)
+        </div>
+    </div>
+    <div class="form-group" )>
+        @Html.LabelFor(m => m.CategoryWork, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.DropDownListFor(x => x.CategoryWork, (List<SelectListItem>)ViewBag.ItemsCategoryWork,
+            "Выберите вариант", new {@class = "form-control", style = "width:500px"}) @Html.ValidationMessageFor(x => x.CategoryWork)
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" class="btn btn-default" value="Поиск" />
+        </div>
+    </div>
+}
 

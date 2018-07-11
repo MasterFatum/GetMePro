@@ -16,6 +16,7 @@
         @Html.LabelFor(m => m.Area, new { @class = "col-md-2 control-label" })
         <div class="col-md-10">
             @Html.DropDownListFor(x => x.Area, new[] {
+                new SelectListItem() {Text = @"Все районы"},
                 new SelectListItem() { Text = @"ЖК Молодёжный"},
                 new SelectListItem() { Text = @"Центральный район (ЦМР)"},
                 new SelectListItem() { Text = @"Фестивальный район (ФМР)"},

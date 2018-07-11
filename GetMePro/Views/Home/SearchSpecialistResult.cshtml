@@ -1,0 +1,45 @@
+﻿@using GetMePro.Models
+@model IEnumerable<ApplicationUser>
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>SearchSpecialistResult</title>
+    <h2 align="center">Результаты поиска</h2>
+</head>
+<body>
+<div>
+    @foreach (ApplicationUser user in Model)
+    {
+        <table border="1">
+            <tr>
+                <th>Фамилия</th>
+                <th>Имя</th>
+                <th>Отчество</th>
+                <th>Район</th>
+                <th>Сфера деятельности</th>
+                <th>Услуги</th>
+                <th>Почта</th>
+                <th>Телефон</th>
+            </tr>
+            <tr>
+                <td>@user.FirstName</td>
+                <td>@user.LastName</td>
+                <td>@user.MiddleName</td>
+                <td>@user.Area</td>
+                <td>@user.CategoryServises</td>
+                <td>@user.CategoryWork</td>
+                <td>@user.Email</td>
+                <td>@user.Phone</td>
+            </tr>
+        </table>
+    }
+</div>
+<div><br/>
+    <p><a class="btn btn-default" @Html.ActionLink("Вернуться к поиску", "SearchSpecialist")</a></p>
+</div>
+</body>
+</html>

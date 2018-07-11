@@ -219,6 +219,7 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\SearchViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -282,6 +283,7 @@
     <Content Include="Views\Home\ForSpecialistInfo.cshtml" />
     <Content Include="Views\Home\ForApplicantInfo.cshtml" />
     <Content Include="Views\Home\OtherInfo.cshtml" />
+    <Content Include="Views\Home\SearchSpecialistResult.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
