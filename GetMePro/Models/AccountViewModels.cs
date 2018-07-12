@@ -65,23 +65,23 @@ namespace GetMePro.Models
 
     public class RegisterViewModel
     {
-        [Required]
+        [Required(ErrorMessage = "Выберите район")]
         [Display(Name = "Район")]
         public string Area { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Выберите сферу деятельности")]
         [Display(Name = "Сфера деятельности")]
         public string CategoryServises { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Выберите услугу")]
         [Display(Name = "Услуги")]
         public string CategoryWork { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Введите фамилию")]
         [Display(Name = "Фамилия")]
         public string FirstName { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Введите имя")]
         [Display(Name = "Имя")]
         public string LastName { get; set; }
 
@@ -91,12 +91,12 @@ namespace GetMePro.Models
         [Display(Name = "Телефон")]
         public string Phone { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Введите Email")]
         [EmailAddress]
         [Display(Name = "Адрес электронной почты")]
         public string Email { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Введите пароль")]
         [StringLength(100, ErrorMessage = "Значение {0} должно содержать не менее {2} символов.", MinimumLength = 6)]
         [DataType(DataType.Password)]
         [Display(Name = "Пароль")]
