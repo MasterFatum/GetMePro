@@ -1,4 +1,5 @@
-﻿@model GetMePro.Models.RegisterViewModel
+﻿@using System.Web.UI.WebControls
+@model GetMePro.Models.RegisterViewModel
 @{
     ViewBag.Title = "Регистрация";
 }
@@ -7,6 +8,7 @@
 
 @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
 {
+
     @Html.AntiForgeryToken()
     <h4>Создайте новую учетную запись.</h4>
     <hr />
@@ -16,9 +18,10 @@
         @Html.LabelFor(m => m.Area, new { @class = "col-md-2 control-label" })
         <div class="col-md-10">
             @Html.DropDownListFor(x => x.Area, (List<SelectListItem>)ViewBag.ItemsArea,
-           "Выберите вариант", new { @class = "form-control", style = "width:500px" })
+                "Выберите вариант", new { @class = "form-control", style = "width:500px"})
         </div>
     </div>
+
 
     <div class="form-group" )>
         @Html.LabelFor(m => m.CategoryServises, new { @class = "col-md-2 control-label" })
@@ -28,13 +31,15 @@
         </div>
     </div>
 
+
     <div class="form-group" )>
         @Html.LabelFor(m => m.CategoryWork, new { @class = "col-md-2 control-label" })
         <div class="col-md-10">
             @Html.DropDownListFor(x => x.CategoryWork, (List<SelectListItem>)ViewBag.ItemsCategoryWork,
-            "Выберите вариант", new { @class = "form-control", style = "width:500px" })
+                "Выберите вариант", new { @class = "form-control", style = "width:500px" })
         </div>
     </div>
+
 
     <div class="form-group">
         @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
@@ -43,12 +48,14 @@
         </div>
     </div>
 
+
     <div class="form-group">
         @Html.LabelFor(m => m.FirstName, new { @class = "col-md-2 control-label" })
         <div class="col-md-10">
             @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control" })
         </div>
     </div>
+
 
     <div class="form-group">
         @Html.LabelFor(m => m.LastName, new { @class = "col-md-2 control-label" })
@@ -57,19 +64,22 @@
         </div>
     </div>
 
+
     <div class="form-group">
         @Html.LabelFor(m => m.MiddleName, new { @class = "col-md-2 control-label" })
         <div class="col-md-10">
-            @Html.TextBoxFor(m => m.MiddleName, new { @class = "form-control" })
+            @Html.TextBoxFor(m => m.MiddleName, new { @class = "form-control", placeholder = "Не обязательно"}) 
         </div>
     </div>
+
 
     <div class="form-group">
         @Html.LabelFor(m => m.Phone, new { @class = "col-md-2 control-label" })
         <div class="col-md-10">
-            @Html.TextBoxFor(m => m.Phone, new { @class = "form-control" })
+            @Html.TextBoxFor(m => m.Phone, new { @class = "form-control", placeholder = "Не обязательно" })
         </div>
     </div>
+
 
     <div class="form-group">
         @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })
@@ -78,12 +88,14 @@
         </div>
     </div>
 
+
     <div class="form-group">
         @Html.LabelFor(m => m.ConfirmPassword, new { @class = "col-md-2 control-label" })
         <div class="col-md-10">
             @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
         </div>
     </div>
+
 
     <div class="form-group">
         <div class="col-md-offset-2 col-md-10">
