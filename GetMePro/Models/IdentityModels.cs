@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.Data.Entity;
 using System.Security.Claims;
 using System.Threading.Tasks;
@@ -43,6 +44,8 @@ namespace GetMePro.Models
 
         [Display(Name = "Телефон")]
         public string Phone { get; set; }
+
+        public DateTime CreateDate { get; set; }
     }
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>

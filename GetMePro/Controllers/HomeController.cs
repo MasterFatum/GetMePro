@@ -41,7 +41,7 @@ namespace GetMePro.Controllers
         [HttpGet]
         public ActionResult SearchSpecialist()
         {
-            ListsDropDown items = new ListsDropDown();
+            ListsDropDownModels items = new ListsDropDownModels();
 
             ViewBag.ItemsArea = items.ItemsArea;
             ViewBag.ItemsCategoryServises = items.ItemsCategoryServise;

@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace GetMePro.Models
 {
-    public class ListsDropDown
+    public class ListsDropDownModels
     {
         public IEnumerable<SelectListItem> ItemsArea = new List<SelectListItem>
         {
@@ -42,10 +42,16 @@ namespace GetMePro.Models
         public IEnumerable<SelectListItem> ItemsCategoryWork = new List<SelectListItem>
         {
             new SelectListItem() {Text = @"Все сферы"},
+            new SelectListItem() {Text = @"Программирование"},
+            new SelectListItem() {Text = @"Системное администрирование"},
             new SelectListItem() {Text = @"Газопроводные работы"},
             new SelectListItem() {Text = @"Кафельные работы"},
             new SelectListItem() {Text = @"Ремонтные работы"},
-            new SelectListItem() {Text = @"Сантехнические работы"}
+            new SelectListItem() {Text = @"Услуги визажиста"},
+            new SelectListItem() {Text = @"Наращевание ногтей"},
+            new SelectListItem() {Text = @"Сантехнические работы"},
+            new SelectListItem() {Text = @"Ремонт двигателя"},
+            new SelectListItem() {Text = @"Лакокрасочные работы"},
         };
     }
 }
