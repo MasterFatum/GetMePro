@@ -31,17 +31,17 @@ namespace GetMePro.Models
 
         public IEnumerable<SelectListItem> ItemsCategoryServise = new List<SelectListItem>
         {
-            new SelectListItem() {Text = @"Все услуги"},
+            new SelectListItem() {Text = @"Все сферы"},
             new SelectListItem() {Text = @"Информационные технологии"},
             new SelectListItem() {Text = @"Ремонт и строительство"},
-            new SelectListItem() {Text = @"Услуги красоты"},
-            new SelectListItem() {Text = @"Автомобильные услуги"},
-            new SelectListItem() {Text = @"Прочие услуги"}
+            new SelectListItem() {Text = @"Сфера красоты"},
+            new SelectListItem() {Text = @"Автомобильная сфера"},
+            new SelectListItem() {Text = @"Прочие сферы"}
         };
 
         public IEnumerable<SelectListItem> ItemsCategoryWork = new List<SelectListItem>
         {
-            new SelectListItem() {Text = @"Все сферы"},
+            new SelectListItem() {Text = @"Все услуги"},
             new SelectListItem() {Text = @"Программирование"},
             new SelectListItem() {Text = @"Системное администрирование"},
             new SelectListItem() {Text = @"Газопроводные работы"},
