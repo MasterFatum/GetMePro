@@ -63,6 +63,8 @@ namespace GetMePro.Controllers
             {
                  users = context.Users.Where(u => u.Area == model.Area);
             }
+
+            ViewBag.UsersCount = users.Count();
             
             return View("SearchSpecialistResult", users);
         }
