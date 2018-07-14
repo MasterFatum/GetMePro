@@ -12,6 +12,8 @@ namespace GetMePro.Models
         {
             new SelectListItem() {Text = @"Все районы"},
             new SelectListItem() {Text = @"ЖК Молодёжный"},
+            new SelectListItem() {Text = @"Немецкая деревня"},
+            new SelectListItem() {Text = @"Табачная фабрика"},
             new SelectListItem() {Text = @"Центральный район (ЦМР)"},
             new SelectListItem() {Text = @"Фестивальный район (ФМР)"},
             new SelectListItem() {Text = @"Комсомольский район (КМР)"},

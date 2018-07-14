@@ -57,11 +57,11 @@ namespace GetMePro.Controllers
 
             if (model.Area == "Все районы")
             {
-                 users = context.Users;
+                 users = context.Users.OrderByDescending(x => x.CreateDate);
             }
             else
             {
-                 users = context.Users.Where(u => u.Area == model.Area);
+                 users = context.Users.Where(u => u.Area == model.Area).OrderByDescending(x => x.CreateDate);
             }
 
             ViewBag.UsersCount = users.Count();
