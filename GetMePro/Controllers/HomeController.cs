@@ -83,5 +83,10 @@ namespace GetMePro.Controllers
         {
             return View();
         }
+
+        public ActionResult LegalInformation()
+        {
+            return View();
+        }
     }
 }

@@ -289,6 +289,7 @@
     <Content Include="Views\Home\ForApplicantInfo.cshtml" />
     <Content Include="Views\Home\OtherInfo.cshtml" />
     <Content Include="Views\Home\SearchSpecialistResult.cshtml" />
+    <Content Include="Views\Home\LegalInformation.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
